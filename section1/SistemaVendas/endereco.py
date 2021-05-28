@@ -12,3 +12,7 @@ class Endereco:
 
     def __str__(self):
         return f'{self.logradouro};{self.numero};{self.bairro};{self.cidade};{self.estado};{self.pais};{self.CEP}'
+
+
+
+        
