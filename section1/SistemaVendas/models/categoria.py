@@ -1,4 +1,0 @@
-class Categoria:
-    nome = ''
-    descricao = ''
-    

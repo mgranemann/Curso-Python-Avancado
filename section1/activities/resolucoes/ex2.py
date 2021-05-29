@@ -1,17 +1,8 @@
-# Crie uma classe Endereço, ela deve conter os seguintes atributos:
-#  - logradouro
-#  - numero 
-#  - bairro
-#  - cidade
-#  - estado
-#  - pais
-#  - CEP
-# A classe deve ter um método endereco_resumido() que deve retornar:
-#  - logradouro, numero, bairro - cidade
-# Crie dois objetos da classe em outro arquivo
-# Imprima todos os atributos de cada objeto
+import sys
+sys.path.append('.')
 
-from endereco import Endereco
+
+from models.endereco import Endereco
 
 end1 = Endereco()
 end1.logradouro = 'Avenida Getulio Vargas'

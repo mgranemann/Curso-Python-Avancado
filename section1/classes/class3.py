@@ -1,5 +1,3 @@
-# Class 3 - 
-class Categoria:
-    nome = ''
-    descricao = ''
+# Class 3 - Override
+# Sobreescrita de métodos
 

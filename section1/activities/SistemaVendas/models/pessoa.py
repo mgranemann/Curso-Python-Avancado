@@ -1,4 +1,4 @@
-from endereco import Endereco
+from models.endereco import Endereco
 
 
 class Pessoa:
@@ -20,3 +20,13 @@ class Pessoa:
     # override
     def __str__(self):
         return f'{self.nome};{self.sobrenome};{self.idade};{self.sexo};{self.endereco}'
+
+    @staticmethod
+    def lista_para_objeto(pessoa_lista):
+        pessoa = Pessoa()
+        pessoa.nome = pessoa_lista[0]
+        pessoa.sobrenome = pessoa_lista[1]
+        pessoa.idade = pessoa_lista[2]
+        pessoa.sexo = pessoa_lista[3]
+        pessoa.endereco = Endereco.lista_para_objeto(pessoa_lista[4:])
+        return pessoa
